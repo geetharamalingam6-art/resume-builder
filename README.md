@@ -15,3 +15,9 @@ The development command starts both the Vite frontend and the API server.
 For a production build, run `npm run build`, then `npm start`; the server serves
 the built frontend and the Gemini API endpoint. `npm run preview` builds and
 starts that production server.
+
+GitHub Pages deployments are built and published from the `main` branch by the
+workflow in `.github/workflows/deploy.yml`. In the repository settings, set
+Pages' build and deployment source to **GitHub Actions**. GitHub Pages only
+hosts the frontend; Gemini-powered skill suggestions still require the API
+server to be deployed separately.
